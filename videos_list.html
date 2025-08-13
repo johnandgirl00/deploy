@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Insights</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PME77KJ3YT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PME77KJ3YT');
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Noto Sans KR', -apple-system, sans-serif;
+            background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #FF0000;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .video-item {
+            padding: 15px;
+            margin: 10px 0;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        .video-item:hover {
+            background: #FF0000;
+            color: white;
+            transform: translateX(10px);
+        }
+        .video-item a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .latest {
+            background: #FF0000;
+            color: white;
+        }
+        .date {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 YouTube Video Insights</h1>
+        <div class="video-item latest">
+            <a href="index.html">
+                <strong>Latest Videos (Main Page)</strong>
+                <div class="date">2025-08-13 16:16</div>
+            </a>
+        </div>
+        <div class="video-item">
+            <a href="youtube_en_20250813_161611.html">
+                <strong>Video Archive</strong>
+                <div class="date">youtube_en_20250813_161611.html</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
